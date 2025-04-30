@@ -1,0 +1,15 @@
+# Ignore all node_modules inside any project
+**/node_modules/
+.pnpm-store/
+
+# Build outputs
+**/build/
+**/dist/
+
+# Common IDEs & tools
+.vscode/
+.idea/
+*.log
+.env
+.DS_Store
+Thumbs.db

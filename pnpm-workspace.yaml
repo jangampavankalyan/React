@@ -1,0 +1,10 @@
+packages:
+  - "01-starting-project"
+  - "07-tic-tac-toe-starting-project"
+  - "08-Investment-Calculator"
+  - "09-Styling-React-Components"
+  - "10-Timer-Challenges"
+  - "11-Task-Lists"
+  - "12-Shopping-Website"
+  - "13-Place-Picker"
+  - "14-Quiz"
