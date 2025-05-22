@@ -12,3 +12,5 @@ packages:
   - "16-Show-and-Hide"
   - "17-Place-Picker-With-DB"
   - "17-Place-Picker-With-DB/backend"
+  - "18-Custom-Hooks"
+  - "18-Custom-Hooks/backend"
