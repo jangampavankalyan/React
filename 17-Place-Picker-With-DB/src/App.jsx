@@ -50,8 +50,7 @@ function App() {
       }
       return [selectedPlace, ...prevPickedPlaces];
     });
-    console.log("dfsdf");
-    
+        
     try {
       await updateUserPlaces([selectedPlace, ...userPlaces]);
       
