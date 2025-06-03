@@ -1,4 +1,5 @@
 packages:
+  - "eslint-config-custom"
   - "01-starting-project"
   - "07-tic-tac-toe-starting-project"
   - "08-Investment-Calculator"
