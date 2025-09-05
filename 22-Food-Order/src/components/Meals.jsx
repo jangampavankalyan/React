@@ -1,0 +1,36 @@
+import { useEffect, useState } from "react";
+import MealItem from "./MealItem";
+
+export default function Meals() {
+  const [loadedMeals, setLoadedMeals] = useState([]);
+
+  useEffect(() => {
+    async function fetchMeals() {
+      var response;
+      try {
+        response = await fetch("http://localhost:3000/meals", {
+          method: "GET",
+        });
+      } catch (error) {
+        console.log("No Connection");
+      }
+
+      if (!response.ok) {
+        console.log("error occured");
+      }
+
+      const meals = await response.json();
+      setLoadedMeals(meals);
+    }
+
+    fetchMeals();
+  }, []);
+
+  return (
+    <ul id="meals">
+      {loadedMeals.map((meal) => (
+        <MealItem key={meal.id} {...meal} />
+      ))}
+    </ul>
+  );
+}
