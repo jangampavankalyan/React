@@ -20,9 +20,9 @@ export default function Meals() {
       }
 
       const meals = await response.json();
+      console.log(meals);
       setLoadedMeals(meals);
     }
-
     fetchMeals();
   }, []);
 
